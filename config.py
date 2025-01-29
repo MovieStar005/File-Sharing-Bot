@@ -4,6 +4,7 @@ import os
 import logging
 from dotenv import load_dotenv
 from logging.handlers import RotatingFileHandler
+from os import environ
 
 load_dotenv()
 
@@ -34,6 +35,12 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 JOIN_REQUEST_ENABLE = os.environ.get("JOIN_REQUEST_ENABLED", None)
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+
+
+API = environ.get("API", "") # shortlink api
+URL = environ.get("URL", "") # shortlink domain without https://
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
+VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
 
 #start message
 START_PIC = os.environ.get("START_PIC","")
