@@ -43,7 +43,7 @@ VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/All_Movie_Star_Li
 VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
 
 #start message
-START_PIC = os.environ.get("START_PIC","")
+START_PIC = os.environ.get("START_PIC","CAACAgUAAxkBAAEBh_Jnmb7YMzrJfN6fHsJAjogOtvxTyAACtBAAAmpjiFUyNMuOOEj1_B4E")
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
